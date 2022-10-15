@@ -1,0 +1,293 @@
+/* Banner of page here */
+/* setting position for the banner of the page */
+ @media screen and(min-width:500px){ 
+.banner{
+    height: 915px;
+    }
+}
+@media screen and(min-width:400px){ 
+    .banner{
+        height: 900px;
+    }
+}
+/* Handwave animation starts from here */
+.rotate{
+    transform-origin: 70% 70%; 
+    font-size: 60px;
+    display: inline-block;
+    animation: handshake 2.5s infinite;
+}
+@keyframes handshake {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) } 
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
+}
+
+/* banner for screen greater than 1360px and 695px ex.computer screen */
+.banner{
+    height: 696px;
+    color: white;
+    padding: 12%;
+    box-sizing: border-box;
+    background-image: url(./Images/banner\ background\ 2.jpg);
+    background-position: center;
+}
+.bannercontent{
+    margin-top: 2%;
+    text-align: center;
+    box-sizing: border-box;
+}
+/* banner msg */
+.bannermsg{
+    text-align: center;
+    font-size: 300%;
+    font-weight: bolder;
+    
+    /* animation-name: banneranimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; */
+    text-shadow: 2px 2px blue,4px 4px red;
+}
+/* Down animation navigator */
+.downindicator{
+position: absolute;
+bottom: 7%;
+left: 50%;
+transform: translateX(-90%);
+}
+.downcontainer{
+width: 20px;
+height: 45px;
+border: 2px solid white;
+border-radius: 12px;
+position: relative;
+overflow: hidden;
+}
+.downcontainer::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 7px;
+    left: 40%;
+    /* transform: translate(-50%); */
+    background-color: white;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 1.3s infinite;
+}
+@keyframes wheel {
+    0%{transform: translateY(0px);}
+    100%{
+        transform: translateY(19px);
+        opacity: 0;
+    }
+}
+
+
+
+/* @keyframes banneranimation {
+    0%{text-shadow: 0px 0px black;}
+    25%{text-shadow: 1px 1px blue;
+        text-shadow: 4px 4px red;
+    }
+    50%{text-shadow: 4px 4px red;
+        text-shadow : 4px 4px yellow;
+    }
+    100%{text-shadow: 1px 1px blue;
+        text-shadow: 4px 4px red;
+        text-shadow : 4px 4px yellow;
+    }
+    
+} */
+.hii{
+    text-decoration: 4px 4px black;
+}
+/* .mybanner{
+} */
+
+
+
+/* this one add background to the main body */
+/* section {
+    background-attachment: fixed;
+    border: 1px solid black;
+    background: rgb(2,0,36);
+    background: linear-gradient(232deg, rgba(2,0,36,1) 0%, rgba(3,3,17,1) 20%, rgba(43,9,121,0.9116046348314607) 100%, rgba(0,212,255,1) 100%);
+} */
+/* .hii{
+    transform: scaleX(5);
+}
+.hii:hover{
+    animation-name: hi;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+@keyframes hi {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(20deg);}
+} */
+span{
+    margin: 4px;
+}
+.navbar{
+    box-shadow: 0 0 20px rgb(3, 3, 3);
+}
+.name{
+    text-shadow: 1px 1px yellow;
+}
+.socialmediaicons{
+    height: 9px;
+    margin: 5px;
+}
+.socialmediaicons a{
+    padding: 0.8rem;
+    color: whitesmoke;
+}
+/* .socialmediaicons .fas-instagram a:hover{
+    color: violet;
+*/
+/* li a:hover{
+    background-color: rgb(110, 103, 103);
+    border-radius: 3px;
+    color: black;
+} */
+/* Section 2 Starts, Main body of the page starts here !! */
+/* About me section */
+/* .aboutmeheading{
+    text-decoration: underline;
+} */
+/* My Project section */
+.myphoto img{
+    width: 80%;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 9px;
+}
+
+.h1{
+    font-weight: bolder;
+}
+h5{
+    color: wheat;
+}
+/* Carousel  */
+/* .slidenext{
+    box-shadow: 0 0 4px black;
+} */
+.styleme{
+    box-shadow:  13px 13px 9px rgb(46, 44, 44);
+    /* border-radius: 7px; */
+}
+/* About my project section  */
+#FG{
+    padding: 3px;
+}
+/* Designing The topic of project starts from here */
+.projectinfo a:link{
+    color: black;
+}
+.projectinfo a:link:hover{
+    text-shadow: 0px 0px 3px darkgreen,0px 0px 2px darkgreen;
+    color: darkgreen;
+}
+/* .projectlinks:hover{
+    
+} */
+
+
+/* Contact me form starts from here */
+/* Contact me background image configuration */
+.contactmecontainer{
+    position: relative;
+    /* text-shadow: 0px 0px 3px orange; */
+    background-image:url("./Images/ContactMebackgrroundimage.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contactmeheading{
+    text-align: center;
+}
+.contactmehere{
+    color: orange;
+    font-weight: bolder;
+    font-size: 15px;
+    box-shadow: 2px 2px 23px black;
+    border-radius: 8px; 
+    backdrop-filter: blur(7px);
+    margin: 7%;
+    padding: 3%;
+}
+label{
+    padding-top: 15px;
+}
+input{
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    /* border: 1px solid black; */
+    padding: 7px;
+    background-color: rgb(214, 228, 227);
+}
+
+input[type=text]:focus{
+    outline: none;
+}
+textarea{
+    width: 100%;
+}
+textarea{
+    background-color: rgb(214, 228, 227);
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+/* Footer section starts from here */
+/* footer div{
+    margin: 5%;
+} */
+/* footer{
+    text-align: center;
+    background-color: black;
+} */
+.madebyvaibhav{
+    margin: 1%;
+}
+.myname{
+    text-shadow: 0px 0px 5px rgb(255, 123, 0),1px 1px 5px orangered;
+}
+/* .sumbittedform{
+    display: none;
+    background-color: red;
+    z-index: 5;
+} */
+/* .displays{
+    display: none;
+} */
+
+/* code to change the look of scroll bar, starts from here */
+/* width */
+::-webkit-scrollbar{
+    width: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track{
+    background: rgb(36, 33, 33);
+}
+/* Handle */
+::-webkit-scrollbar-thumb{
+    background: rgb(78, 69, 69);
+    border-radius: 7px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+    background: gray;
+}
+/* End of scrollbar code implementation */
