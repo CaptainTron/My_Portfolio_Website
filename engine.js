@@ -65,9 +65,3 @@ function formvalidation(){
 // Form Declaration Ends here
 // Form declaration ends here
 
-// Used to activate popover in the webpage in footer section
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl)
-})
-

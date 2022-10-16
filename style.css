@@ -186,6 +186,11 @@ button{
 .myname{
     text-shadow: 0px 0px 5px rgb(255, 123, 0),1px 1px 5px orangered;
 }
+.sendhere{
+    display: float;
+    float: right;
+}
+
 
 /* code to change the look of scroll bar, starts from here */
 /* width */
