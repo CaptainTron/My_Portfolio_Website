@@ -15,12 +15,6 @@ function validateemail(){
   }
 }
 
-
-
-
-
-
-
 // Form validation javascript code here
 let fullname = document.getElementById('fname')
 let subjects = document.getElementById('subject')
@@ -63,5 +57,4 @@ function formvalidation(){
 
 }
 // Form Declaration Ends here
-// Form declaration ends here
 
